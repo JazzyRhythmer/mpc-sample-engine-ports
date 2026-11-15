@@ -4,7 +4,7 @@
 
 Unofficial native engine adaptations for **Rhythmer OS**, maintained by **jazzy rhythmer**. Original engine names, authors, DSP sources and licenses are retained.
 
-[Download Rhythmer OS](https://github.com/JazzyRhythmer/mpc-sample-rhythmer-os/releases) · [Website](https://jazzyrhythmer.github.io/mpc-sample/) · [Instagram](https://www.instagram.com/jazzyrhythmer/) · [YouTube](https://www.youtube.com/@jazzyrhythmer)
+[Download Rhythmer OS](https://github.com/jazzyrhythmer/mpc-sample-rhythmer-os/releases) · [Website](https://jazzyrhythmer.github.io/mpc-sample/) · [Instagram](https://www.instagram.com/jazzyrhythmer/) · [YouTube](https://www.youtube.com/@jazzyrhythmer)
 
 This repository contains port adapters, parameter contracts, pinned original FM-1/Move sources, build helpers and credits. The OS repository contains the sampler, single-sound and Rhythmer Kit host, UI, GEN, Acid and Break workflows, installation and recovery instructions. Melodee by Kerem Kiliç (Ellic Studio) supplies the OS foundation; Open MPC supplies the existing wrapper foundation. These are unofficial ports, not endorsements by the original authors.
 
@@ -17,7 +17,7 @@ This repository contains port adapters, parameter contracts, pinned original FM-
 
 One loop from each engine, with its own screen and sound. Ported and integrated for MPC Sample, and shared for the open-source community.
 
-[Watch on the website](https://jazzyrhythmer.github.io/mpc-sample/#engine-ports-film) · [Download 16:9 MP4](https://github.com/JazzyRhythmer/mpc-sample-engine-ports/releases/download/v0.4.0-beta.3-r1/RHYTHMER-20-Engine-Previews-YouTube-Kit-v6-Continuous-Opening.mp4) · [Instagram / Reels 9:16 MP4](https://github.com/JazzyRhythmer/mpc-sample-engine-ports/releases/download/v0.4.0-beta.3-r1/RHYTHMER-20-Engine-Previews-Reels-Kit-v6-Continuous-Opening.mp4)
+[Watch on the website](https://jazzyrhythmer.github.io/mpc-sample/#engine-ports-film) · [Download 16:9 MP4](https://github.com/jazzyrhythmer/mpc-sample-engine-ports/releases/download/v0.4.0-beta.3-r1/RHYTHMER-20-Engine-Previews-YouTube-Kit-v6-Continuous-Opening.mp4) · [Instagram / Reels 9:16 MP4](https://github.com/jazzyrhythmer/mpc-sample-engine-ports/releases/download/v0.4.0-beta.3-r1/RHYTHMER-20-Engine-Previews-Reels-Kit-v6-Continuous-Opening.mp4)
 <!-- RHYTHMER FILM END -->
 
 
