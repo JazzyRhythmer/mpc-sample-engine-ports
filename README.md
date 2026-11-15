@@ -8,6 +8,12 @@ Unofficial native engine adaptations for **Rhythmer OS**, maintained by **jazzy 
 
 This repository contains port adapters, parameter contracts, pinned original FM-1/Move sources, build helpers and credits. The OS repository contains the sampler, single-sound and Rhythmer Kit host, UI, GEN, Acid and Break workflows, installation and recovery instructions. Melodee by Kerem Kiliç (Ellic Studio) supplies the OS foundation; Open MPC supplies the existing wrapper foundation. These are unofficial ports, not endorsements by the original authors.
 
+## Current release
+
+For RHYTHMER OS **0.4.0-beta.3**: native PRESETS/EDIT integration, source-ordered sound controls and units, focused-pad editing, original Plaits FM programs, and preset/state fixes. The original creators retain authorship of the instruments and DSP; my work is the MPC Sample porting, optimization and host integration.
+
+![Sophie native preview](assets/preview/sophie.gif)
+
 ## Ports and original sources
 
 | Port directory | Original project | Source record |
