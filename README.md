@@ -27,12 +27,6 @@ For RHYTHMER OS **0.4.0-beta.3**: native PRESETS/EDIT integration, source-ordere
 
 ![Sophie native preview](assets/preview/sophie.gif)
 
-## Current release
-
-For RHYTHMER OS **0.4.0-beta.3**: native PRESETS/EDIT integration, source-ordered sound controls and units, focused-pad editing, original Plaits FM programs, and preset/state fixes. The original creators retain authorship of the instruments and DSP; my work is the MPC Sample porting, optimization and host integration.
-
-![Sophie native preview](assets/preview/sophie.gif)
-
 ## Ports and original sources
 
 | Port directory | Original project | Source record |
@@ -70,14 +64,20 @@ Original available banks are preserved except the external Sequential Prophet an
 
 Licenses apply per component; the root license does not relicense original sources, patches, fonts or third-party assets. This is unofficial software, unaffiliated with AKAI Professional or inMusic, provided without warranty under its applicable licenses. Offline host checks are complete for this beta; physical MPC Sample validation remains pending. Use the OS full SD download for installation; this source repository is not an installer.
 
-## Stay in touch
-
-RHYTHMER OS is free and open source, and will always be free. Your support helps me keep working on this project and other open-source tools.
-
-[Support on Ko-fi](https://ko-fi.com/jazzyrhythmer) · [Patreon](https://www.patreon.com/JazzyRhythmer/) · [Email updates](https://jazzy-rhythmer.kit.com/6dd4006c7c) · [Main website](https://jazzyrhythmer.github.io/) · [Instagram](https://www.instagram.com/jazzyrhythmer/) · [YouTube](https://www.youtube.com/@jazzyrhythmer)
-
 ## Rhythmer Kit
 
 Hit-responsive drum geometry, with a restrained input-driven depth response.
 
 ![Rhythmer Kit native preview](assets/preview/rhythmer-kit.gif)
+
+<!-- JAZZY-RHYTHMER-PORTFOLIO:START -->
+## More from Jazzy Rhythmer
+
+**For MPC Sample:** [RHYTHMER OS](https://jazzyrhythmer.github.io/mpc-sample/) · **For FM-1:** [JAZZY](https://jazzyrhythmer.github.io/Jazzy/) / [RHYTHMER](https://jazzyrhythmer.github.io/Rhythmer/)
+
+**JR Audio Software** — in development, expected in 2027: [JR ACID](https://jazzyrhythmer.github.io/software.html#jr-acid) · [JR FX](https://jazzyrhythmer.github.io/software.html#jr-fx) · [JR SMPL](https://jazzyrhythmer.github.io/software.html#jr-smpl) · [JR RYTM](https://jazzyrhythmer.github.io/software.html#jr-rytm) · [JR DRAW](https://jazzyrhythmer.github.io/software.html#jr-draw) · [JR PLAY](https://jazzyrhythmer.github.io/software.html#jr-play) · [JR TREK](https://jazzyrhythmer.github.io/software.html#jr-trek).
+
+[Main website](https://jazzyrhythmer.github.io/) · [Ko-fi](https://ko-fi.com/jazzyrhythmer) · [Patreon](https://www.patreon.com/JazzyRhythmer/) · [Studio Notes & email updates](https://jazzyrhythmer.github.io/#notes) · [YouTube](https://www.youtube.com/@jazzyrhythmer) · [Instagram](https://www.instagram.com/jazzyrhythmer/)
+
+Voluntary support helps me keep making music, instruments and open-source tools. Thank you for being part of it.
+<!-- JAZZY-RHYTHMER-PORTFOLIO:END -->
