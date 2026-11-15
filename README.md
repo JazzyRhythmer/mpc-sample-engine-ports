@@ -50,3 +50,9 @@ Original available banks are preserved except the external Sequential Prophet an
 [Preset provenance and names](docs/RHYTHMER_PRESETS.md) · [Bank audit](docs/ORIGINAL_PRESET_AUDIT_KO.md) · [Source lineage](docs/FM1_LINEAGE_KO.md) · [Credits](THIRD_PARTY_NOTICES.md) · [Validation and limits](docs/VERIFICATION.md)
 
 Licenses apply per component; the root license does not relicense original sources, patches, fonts or third-party assets. This is unofficial software, unaffiliated with AKAI Professional or inMusic, provided without warranty under its applicable licenses. Offline host checks are complete for this beta; physical MPC Sample validation remains pending. Use the OS full SD download for installation; this source repository is not an installer.
+
+## Stay in touch
+
+RHYTHMER OS is free and open source, and will always be free. Your support helps me keep working on this project and other open-source tools.
+
+[Support on Ko-fi](https://ko-fi.com/jazzyrhythmer) · [Patreon](https://www.patreon.com/JazzyRhythmer/) · [Email updates](https://jazzy-rhythmer.kit.com/6dd4006c7c) · [Main website](https://jazzyrhythmer.github.io/) · [Instagram](https://www.instagram.com/jazzyrhythmer/) · [YouTube](https://www.youtube.com/@jazzyrhythmer)
