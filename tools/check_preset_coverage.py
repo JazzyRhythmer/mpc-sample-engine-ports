@@ -42,6 +42,13 @@ def check():
     full=hortator_presets();excluded=[dict(name=x['name'],reason='Requires original sample assets and sample model, absent from synthesis-only port') for x in full if x['model']=='DM_SMPL']
     source=[x['name'] for x in full if x['model']=='DM_ACID'] if e['name']=='Acid Engine' else [x['name'] for x in full if x['model']!='DM_SMPL']
     basis='Original Hortator factory bank; four sample-dependent presets explicitly excluded'
+    if e['name']=='Acid Engine':
+     aphex=next(x for x in c['engines'] if x['name']=='Aphex');selected=json.loads((ROOT/'config/acid-aphex-presets.json').read_text())['presets']
+     for name in selected:
+      original=next(x for x in aphex['sounds'] if x['name']==name);alias=next(x for x in e['sounds'] if x['name']==name)
+      assert alias['source_engine']==aphex['folder'] and {k:v for k,v in alias.items() if k not in ('source_engine','source_sound','origin')}==original
+     source+=selected;basis+='; selected original Aphex presets routed to the unmodified Aphex DSP'
+
    if p.name=='fm1-elixir':
     params=json.loads((p/'contract.json').read_text())['chain_params'];expected=own_programs('elixir',params);source=[k['name']+' / '+v['name'] for k in expected for v in e['voices']];basis='Original GPL Initkit plus four explicitly authored Rhythmer kits, each seven voices; external Erica/Hrtl kit assets excluded'
     assert [x['values'] for x in e['sounds']]==[k['values'] for k in expected for v in e['voices']]
@@ -73,8 +80,8 @@ def check():
   assert names and all(names)
   assert not any('host_adjustment' in s for s in e['sounds'])
   rows.append(dict(engine=e['name'],folder=e['folder'],variant=e.get('variant',''),source_slots=len(names),exposed_sounds=len(e.get('selection',names)),basis=basis,bank_assets=assets,excluded=excluded,missing=[]))
- assert len(rows)==25 and len(c['kits'])==len(json.loads((ROOT/'config/first-release-candidates.json').read_text())['kit_presets'])
- result=dict(version=(ROOT/'VERSION').read_text().strip(),source_views=25,track_picker_entries=20,factory_kits=len(c['kits']),exposed_sounds=sum(x['exposed_sounds'] for x in rows),missing_source_names=0,explicit_exclusions=7,excluded_factory_presets=4,excluded_input_only_models=3,excluded_external_bank_assets=118,excluded_external_sound_selections=1019,original_source_selections=2616,rhythmer_authored_selections=43,policy='Original bank names/data retained except 118 excluded external assets. User-authorized Rhythmer presets are separately identified: 15 Prophet sounds and four Elixir kits / 28 voices, made from GPL Init with independent edits. No hidden envelope overrides. This report is not blanket public distribution clearance.',engines=rows)
+ assert len(rows)==27 and len(c['kits'])==len(json.loads((ROOT/'config/first-release-candidates.json').read_text())['kit_presets'])
+ result=dict(version=(ROOT/'VERSION').read_text().strip(),source_views=27,track_picker_entries=22,factory_kits=len(c['kits']),exposed_sounds=sum(x['exposed_sounds'] for x in rows),missing_source_names=0,explicit_exclusions=7,excluded_factory_presets=4,excluded_input_only_models=3,excluded_external_bank_assets=118,excluded_external_sound_selections=1019,original_source_selections=sum(x['exposed_sounds'] for x in rows)-43,rhythmer_authored_selections=43,policy='Original bank names/data retained except 118 excluded external assets. User-authorized Rhythmer presets are separately identified: 15 Prophet sounds and four Elixir kits / 28 voices, made from GPL Init with independent edits. No hidden envelope overrides. This report is not blanket public distribution clearance.',engines=rows)
  (ROOT/'config/preset-coverage.json').write_text(json.dumps(result,indent=2)+'\n');print('Pinned preset coverage:',result['exposed_sounds'],'selections; 4 sample dependencies and 3 input-only models documented')
  return result
 if __name__=='__main__':check()

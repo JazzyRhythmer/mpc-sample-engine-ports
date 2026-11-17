@@ -11,21 +11,19 @@ This repository contains port adapters, parameter contracts, pinned original FM-
 
 
 <!-- RHYTHMER FILM START -->
-## Watch all 20 engine previews
+## Explore the engines
 
 [![20 engine previews](assets/preview/engines-film.jpg)](https://jazzyrhythmer.github.io/mpc-sample/#engine-ports-film)
 
-One loop from each engine, with its own screen and sound. Ported and integrated for MPC Sample, and shared for the open-source community.
+The earlier film covers 20 engines. [Browse the current 22-engine collection and audio previews](https://jazzyrhythmer.github.io/mpc-sample/#engines), including Frodhes and Tenebrae.
 
 [Watch on the website](https://jazzyrhythmer.github.io/mpc-sample/#engine-ports-film) · [Download 16:9 MP4](https://github.com/jazzyrhythmer/mpc-sample-engine-ports/releases/download/v0.4.0-beta.3-r1/RHYTHMER-20-Engine-Previews-YouTube-Kit-v6-Continuous-Opening.mp4) · [Instagram / Reels 9:16 MP4](https://github.com/jazzyrhythmer/mpc-sample-engine-ports/releases/download/v0.4.0-beta.3-r1/RHYTHMER-20-Engine-Previews-Reels-Kit-v6-Continuous-Opening.mp4)
 <!-- RHYTHMER FILM END -->
 
 
-## Current release
+## Available instruments
 
-For RHYTHMER OS **0.4.0-beta.3**: native PRESETS/EDIT integration, source-ordered sound controls and units, focused-pad editing, original Plaits FM programs, and preset/state fixes. The original creators retain authorship of the instruments and DSP; my work is the MPC Sample porting, optimization and host integration.
-
-![Sophie native preview](assets/preview/sophie.gif)
+The matching RHYTHMER OS **0.2.0** catalogue exposes **22 instrument entries**, **36 Rhythmer Kits** and **2,888 sound selections across 27 source views**, including kit voices and shared Acid choices. These ports currently depend on the RHYTHMER host integration; use the OS full SD package rather than treating this repository as a generic plug-in installer.
 
 ## Ports and original sources
 
@@ -49,8 +47,22 @@ For RHYTHMER OS **0.4.0-beta.3**: native PRESETS/EDIT integration, source-ordere
 | [move-dexed](ports/move-dexed) | [charlesvestal/schwung-dx7](https://github.com/charlesvestal/schwung-dx7) | [pinned provenance](ports/move-dexed/SOURCE.json) |
 | [move-hera](ports/move-hera) | [charlesvestal/schwung-hera](https://github.com/charlesvestal/schwung-hera) | [pinned provenance](ports/move-hera/SOURCE.json) |
 | [move-plaits](ports/move-plaits) | [j3threejay/move-anything-plaits](https://github.com/j3threejay/move-anything-plaits) | [pinned provenance](ports/move-plaits/SOURCE.json) |
+| [fm1-frodhes](ports/fm1-frodhes) | [Frodhes](https://github.com/leonardoMirabal/frodhes.git) | [pinned provenance](ports/fm1-frodhes/SOURCE.json) |
+| [move-tenebrae](ports/move-tenebrae) | [Tenebrae](https://github.com/legsmechanical/schwung-tenebrae) | [pinned provenance](ports/move-tenebrae/SOURCE.json) |
 
-Sophie is included under `ports/sophie`, with the original DSP and notices. The seven classic drum variants remain kit-only in the OS. Elixir is the canonical LXR-family adaptation. Acid uses Hortator; Break and Rhythmer Kit are host features, not separate original synth ports. Original baseline MPC drum packages retain their names and source records in `third_party/mpc-original`.
+Sophie is included under `ports/sophie`, with the original DSP and notices. The seven classic drum variants remain kit-only in the OS. Elixir is the canonical LXR-family adaptation. Acid uses Hortator ACID and Aphex; Break and Rhythmer Kit are host features, not separate original synth ports. Original baseline MPC drum packages retain their names and source records in `third_party/mpc-original`.
+
+### Frodhes
+
+57 original electric-piano, vibraphone and marimba programs.
+
+<img src="assets/engines/frodhes-still.png" width="400" alt="Frodhes in RHYTHMER OS 0.2.0">
+
+### Tenebrae
+
+Eight oscillator models and 164 original programs including Init.
+
+<img src="assets/engines/tenebrae-still.png" width="400" alt="Tenebrae in RHYTHMER OS 0.2.0">
 
 ## Build
 
@@ -68,7 +80,7 @@ Licenses apply per component; the root license does not relicense original sourc
 
 Hit-responsive drum geometry, with a restrained input-driven depth response.
 
-![Rhythmer Kit native preview](assets/preview/rhythmer-kit.gif)
+![Rhythmer Kit native preview](assets/engines/rhythmer-kit-still.png)
 
 <!-- JAZZY-RHYTHMER-PORTFOLIO:START -->
 ## More from Jazzy Rhythmer

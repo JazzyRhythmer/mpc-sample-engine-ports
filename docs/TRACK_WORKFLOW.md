@@ -42,6 +42,32 @@ The [Ableton Move manual, Browsing and Swapping Presets](https://www.ableton.com
 
 The pinned Melodee v0.2.0 TRACKS page had no instrument/type action menu; the fork had not removed one. The fork's added empty-track shortcuts were, however, inconsistent with the native empty-track button lock. KIT, MIDI, Back and Undo/Redo are now enabled through that lock.
 
-The local ARM64 build passed 68 workflow assertions; five native menu previews had zero text issues. Host checks exercise real plugin replacement and state restoration, all-pattern preservation, new/used/empty track transitions, scoped Back behavior, PAD BANK selection, delete cancel/confirm, recording/Freeze guards and asynchronous target ownership. Physical-device validation remains separate. This revision is local and is not a release or installation.
+The local ARM64 build passes track workflow assertions; five native menu previews had zero text issues. Host checks exercise real plugin replacement and state restoration, all-pattern preservation, new/used/empty track transitions, scoped Back behavior, PAD BANK selection, delete cancel/confirm, recording/Freeze guards and asynchronous target ownership. Physical-device validation remains separate. Physical installation remains separate from published early-beta software evidence.
 
-An intentional EMPTY retains its patterns and uses the same native PLUG-IN / KIT / MIDI carousel as a never-assigned track. Push from its TRACKS cell or a stranded empty Edit screen opens that carousel; it does not open TRACK SETUP. Sample Kit with no loaded samples is still a Sample Kit, not EMPTY.
+An intentional EMPTY retains its patterns and uses the same native PLUG-IN / KIT / MIDI carousel as a never-assigned track. Push from its TRACKS cell or a stranded empty Edit screen opens that carousel; it does not open TRACK SETUP. Sample Kit with no loaded samples remains a Sample Kit until a type is chosen. On its SOUND or TRIM face, Push now opens TRACK TYPE directly; choosing SAMPLE KIT starts the first sample browser. BACK or Shift + Push returns to the source face without changing the kit.
+
+## Contextual keys and all-empty navigation
+
+The selected track's active Note Repeat/arp retains the native rate overlay on TRACKS: B1/B2/B3 choose 1/8, 1/16 and 1/32 (B1/B3 again: 1/4 and 1/64; Shift: triplets). Tap NOTE REPEAT to turn it off and restore TRACK SETUP / SENDS / FX. Enabling arp on its ARP page uses the same state. PAD BANK held, track copy/move and modal questions retain their native higher-priority controls. TRACK SETUP is the normal unmodified TRACKS B1 action, not an override of these modes.
+
+Even when every track is EMPTY, unshifted PAD FX + KNOB FX opens TRACKS, in either order. Each key alone stays blocked on the empty carousel, as upstream; their Shift functions are not newly enabled. This allows track/project management without first creating an instrument. No sound, pattern or track is automatically created.
+
+The instrument preset list's B2 PLUG-INS is an additional route to the same instrument picker as SAMPLE SELECT and CHANGE PLUG-IN. Effect preset lists do not expose this replacement route. The new routes check recording/freeze before opening; SAMPLE SELECT can still browse before its common load-time guard. This is a difference in guard timing, not permission to replace a recording/frozen instrument.
+
+GEN subpages use one Back hierarchy for screen BACK and Shift + Push: subpage → GEN main → Patterns. This applies to Vary, Break, Setup and Acid; it does not change generation, seed or note data. Sample-browser folder traversal remains distinct from cancelling the browser to its caller.
+
+## Confirmation cancellation
+
+Shift + Push cancels a confirmation dialog even if its affirmative action is selected. Plain Push and B3 still confirm; B1 still cancels. Cancel preserves the sound, patterns, pending target and undo history.
+
+## Empty pad: encoder Push
+
+On a normal sampler track's **SOUND / TRIM** face:
+
+- If no primary sample or secondary layer exists on any of its 128 pads (banks A–H), Push opens **TRACK TYPE**. PLUG-IN opens the native instrument picker; SAMPLE KIT opens the sample browser; MIDI and EMPTY use the existing type-change operation. Opening or cancelling this choice leaves the track and patterns untouched.
+- If another pad has a sample or layer, Push opens **SAMPLES** for the selected empty pad. Pick a file and Push to load it there. The existing browser's pad selection remains active: hitting another pad changes the load destination. B1 goes up a folder or returns to the source face at the root. Shift + Push closes the browser directly to its caller.
+- The face displays **PUSH: TRACK TYPE** or **PUSH: LOAD SAMPLE**. A pad with secondary layers is playable content, even if its primary sample is empty, so its native click is retained.
+- Loaded pads retain knob-focus cycling. Legacy TUNE/ENV/LAYERS page-map clicks, other Stage pages, plug-in controls, Break loop loading, Note Repeat controls and Shift + Push Back keep their existing jobs.
+- Recording and frozen-track guards apply before the new shortcut opens. Track changes from SAMPLES follow the newly selected track and dismiss the old browser, as elsewhere.
+
+A never-assigned track or an intentional EMPTY retains Melodee's native type carousel. TRACK SETUP itself remains a B1 action on TRACKS.
