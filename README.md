@@ -74,7 +74,7 @@ Original available banks are preserved except the external Sequential Prophet an
 
 [Preset provenance and names](docs/RHYTHMER_PRESETS.md) · [Bank audit](docs/ORIGINAL_PRESET_AUDIT_KO.md) · [Source lineage](docs/FM1_LINEAGE_KO.md) · [Credits](THIRD_PARTY_NOTICES.md) · [Validation and limits](docs/VERIFICATION.md)
 
-Licenses apply per component; the root license does not relicense original sources, patches, fonts or third-party assets. This is unofficial software, unaffiliated with AKAI Professional or inMusic, provided without warranty under its applicable licenses. Offline host checks are complete for this beta; physical MPC Sample validation remains pending. Use the OS full SD download for installation; this source repository is not an installer.
+Licenses apply per component; the root license does not relicense original sources, patches, fonts or third-party assets. This is unofficial software, unaffiliated with AKAI Professional or inMusic, provided without warranty under its applicable licenses.  Use the OS full SD download for installation; this source repository is not an installer.
 
 ## Rhythmer Kit
 
